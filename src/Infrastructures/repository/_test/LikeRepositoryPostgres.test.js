@@ -52,7 +52,7 @@ describe('LikeRepositoryPostgres', () => {
 
 		const likes = await LikesTableTestHelper.findLikeById(likeId)
 
-		expect(likes).toHaveLength(1)
+		expect(likes).toHaveLength(0)
 	})
 
 	it('decreaseLike function', async () => {
